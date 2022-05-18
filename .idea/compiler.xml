@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="app-common" />
+        <module name="app-mapper" />
+        <module name="app-pojo" />
+        <module name="app-web" />
+        <module name="app-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="app-common" target="1.8" />
+      <module name="app-mapper" target="1.8" />
+      <module name="app-pojo" target="1.8" />
+      <module name="app-service" target="1.8" />
+      <module name="app-web" target="1.8" />
+      <module name="EnterpriseSpringBoot" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="app-common" options="-parameters" />
+      <module name="app-mapper" options="-parameters" />
+      <module name="app-pojo" options="-parameters" />
+      <module name="app-service" options="-parameters" />
+      <module name="app-web" options="-parameters" />
+    </option>
+  </component>
+</project>

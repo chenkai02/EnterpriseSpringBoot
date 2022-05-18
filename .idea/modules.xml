@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/EnterpriseSpringBoot.iml" filepath="$PROJECT_DIR$/.idea/EnterpriseSpringBoot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-common/app-common.iml" filepath="$PROJECT_DIR$/app-common/app-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-mapper/app-mapper.iml" filepath="$PROJECT_DIR$/app-mapper/app-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-pojo/app-pojo.iml" filepath="$PROJECT_DIR$/app-pojo/app-pojo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-service/app-service.iml" filepath="$PROJECT_DIR$/app-service/app-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-web/app-web.iml" filepath="$PROJECT_DIR$/app-web/app-web.iml" />
+    </modules>
+  </component>
+</project>

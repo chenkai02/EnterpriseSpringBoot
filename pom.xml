@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <packaging>pom</packaging>
+    <name>app-spboot</name>
+    <modules>
+        <module>app-common</module>
+        <module>app-pojo</module>
+        <module>app-mapper</module>
+        <module>app-service</module>
+        <module>app-web</module>
+    </modules>
+    <groupId>cpm.gitee.app</groupId>
+    <artifactId>app-spboot</artifactId>
+    <version>1.0.0</version>
+
+    <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <!--统一版本管理-->
+        <app.spboot.version>1.0.0</app.spboot.version>
+        <mybatis.version>2.2.2</mybatis.version>
+    </properties>
+    <!-- SpringBoot父工程-->
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.6.5</version>
+    </parent>
+    <!-- 统一依赖管理-->
+    <dependencyManagement>
+        <dependencies>
+            <!--引入mybatis依赖-->
+            <dependency>
+                <groupId>org.mybatis.spring.boot</groupId>
+                <artifactId>mybatis-spring-boot-starter</artifactId>
+                <version>${mybatis.version}</version>
+            </dependency>
+            <!--common 子工程依赖-->
+            <dependency>
+                <groupId>cpm.gitee.app</groupId>
+                <artifactId>app-common</artifactId>
+                <version>${app.spboot.version}</version>
+            </dependency>
+            <!--pojo 子工程依赖-->
+            <dependency>
+                <groupId>cpm.gitee.app</groupId>
+                <artifactId>app-pojo</artifactId>
+                <version>${app.spboot.version}</version>
+            </dependency>
+            <!--mapper 子工程依赖-->
+            <dependency>
+                <groupId>cpm.gitee.app</groupId>
+                <artifactId>app-mapper</artifactId>
+                <version>${app.spboot.version}</version>
+            </dependency>
+            <!--service 子工程依赖-->
+            <dependency>
+                <groupId>cpm.gitee.app</groupId>
+                <artifactId>app-service</artifactId>
+                <version>${app.spboot.version}</version>
+            </dependency>
+            <!--web 子工程依赖-->
+            <dependency>
+                <groupId>cpm.gitee.app</groupId>
+                <artifactId>app-web</artifactId>
+                <version>${app.spboot.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
