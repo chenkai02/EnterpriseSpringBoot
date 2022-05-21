@@ -22,6 +22,7 @@
         <app.spboot.version>1.0.0</app.spboot.version>
         <mybatis.version>2.2.2</mybatis.version>
         <lombok.version>1.18.4</lombok.version>
+        <druid.version>1.2.6</druid.version>
     </properties>
     <!-- SpringBoot父工程-->
     <parent>
@@ -34,6 +35,12 @@
     <!-- 统一依赖管理-->
     <dependencyManagement>
         <dependencies>
+            <!--引入druid依赖-->
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>druid-spring-boot-starter</artifactId>
+                <version>${druid.version}</version>
+            </dependency>
             <!--引入mybatis依赖-->
             <dependency>
                 <groupId>org.mybatis.spring.boot</groupId>
