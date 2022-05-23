@@ -1,0 +1,1 @@
+2022-05-23 14:40:28.046 WARN  [main ] tk.mybatis.spring.mapper.ClassPathMapperScanner: No MyBatis mapper was found in '[com.exampl.demo]' package. Please check your configuration.

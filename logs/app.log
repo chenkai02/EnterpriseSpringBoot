@@ -1,0 +1,18 @@
+2022-05-23 14:40:27.560 INFO  [main ] com.exampl.demo.Application: Starting Application using Java 1.8.0_261 on DESKTOP-VOPSS2R with PID 16148 (E:\EnterpriseSpringBoot\app-web\target\classes started by 1 in E:\EnterpriseSpringBoot)
+2022-05-23 14:40:27.568 INFO  [main ] com.exampl.demo.Application: No active profile set, falling back to 1 default profile: "default"
+2022-05-23 14:40:28.046 WARN  [main ] tk.mybatis.spring.mapper.ClassPathMapperScanner: No MyBatis mapper was found in '[com.exampl.demo]' package. Please check your configuration.
+2022-05-23 14:40:28.558 INFO  [main ] org.apache.coyote.http11.Http11NioProtocol: Initializing ProtocolHandler ["http-nio-6050"]
+2022-05-23 14:40:28.558 INFO  [main ] org.apache.catalina.core.StandardService: Starting service [Tomcat]
+2022-05-23 14:40:28.559 INFO  [main ] org.apache.catalina.core.StandardEngine: Starting Servlet engine: [Apache Tomcat/9.0.60]
+2022-05-23 14:40:28.709 INFO  [main ] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: Initializing Spring embedded WebApplicationContext
+2022-05-23 14:40:28.794 INFO  [main ] com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure: Init DruidDataSource
+2022-05-23 14:40:29.164 INFO  [main ] com.alibaba.druid.pool.DruidDataSource: {dataSource-1} inited
+2022-05-23 14:40:29.536 INFO  [main ] tk.mybatis.mapper.autoconfigure.MapperCacheDisabler: Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-05-23 14:40:29.537 INFO  [main ] tk.mybatis.mapper.autoconfigure.MapperCacheDisabler: Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-05-23 14:40:29.537 INFO  [main ] tk.mybatis.mapper.autoconfigure.MapperCacheDisabler: Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-05-23 14:40:29.538 INFO  [main ] tk.mybatis.mapper.autoconfigure.MapperCacheDisabler: Clear EntityHelper entityTableMap cache.
+2022-05-23 14:40:29.610 INFO  [main ] org.apache.coyote.http11.Http11NioProtocol: Starting ProtocolHandler ["http-nio-6050"]
+2022-05-23 14:40:29.636 INFO  [main ] com.exampl.demo.Application: Started Application in 2.502 seconds (JVM running for 3.509)
+2022-05-23 14:40:52.302 INFO  [http-nio-6050-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-23 14:40:52.330 INFO  [http-nio-6050-exec-1] com.exampl.demo.controller.TestController: ===========>开始查询数据库
+2022-05-23 14:40:52.804 INFO  [http-nio-6050-exec-1] com.exampl.demo.controller.TestController: ======>>>: 数据库查询完成
