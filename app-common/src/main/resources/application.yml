@@ -45,6 +45,9 @@ spring:
         url-pattern: /* # 添加过滤规则
         #对以下类型忽略过滤格式
         exclusions: '*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*'
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
 
 mybatis:
   mapper-locations: classpath:/mapper/**/*.xml
