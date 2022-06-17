@@ -2,16 +2,16 @@ package com.exampl.demo.controller;
 import com.exampl.demo.domain.common.util.RedisUtil;
 import com.exampl.demo.domain.common.util.ResultUtil;
 import com.exampl.demo.domain.entity.Result;
-import com.exampl.demo.domain.enums.ResultEnum;
-import com.sun.media.jfxmedia.logging.Logger;
+import io.swagger.annotations.ApiOperation;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.serializer.RedisSerializer;
+import org.springframework.data.redis.serializer.StringRedisSerializer;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import sun.rmi.runtime.Log;
 
 
 /**
@@ -25,7 +25,21 @@ public class RedisController {
     @Autowired
     RedisUtil redisUtil;
 
-    private final RedisTemplate redisTemplate;
+    private  RedisTemplate redisTemplate;
+
+    /***
+     * 配置redis序列化
+     * 如果用redis自带序列化数据会产生\xac\xed\x00\x05t\x00字符串
+     */
+    @Autowired(required = false)
+    public void setRedisTemplate(RedisTemplate redisTemplate) {
+        RedisSerializer stringSerializer = new StringRedisSerializer();
+        redisTemplate.setKeySerializer(stringSerializer);
+        redisTemplate.setValueSerializer(stringSerializer);
+        redisTemplate.setHashKeySerializer(stringSerializer);
+        redisTemplate.setHashValueSerializer(stringSerializer);
+        this.redisTemplate = redisTemplate;
+    }
 
     public RedisController(RedisTemplate redisTemplate){
         this.redisTemplate = redisTemplate;
@@ -42,6 +56,7 @@ public class RedisController {
     }
 
     @PostMapping ("/save")
+    @ApiOperation("redisSet测试")
     public Result save(String key , String Value){
         try {
             redisTemplate.opsForValue().set(key ,Value);
