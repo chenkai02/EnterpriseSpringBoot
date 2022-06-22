@@ -2,6 +2,7 @@ package com.exampl.demo.controller;
 import com.exampl.demo.domain.common.util.RedisUtil;
 import com.exampl.demo.domain.common.util.ResultUtil;
 import com.exampl.demo.domain.entity.Result;
+import com.exampl.demo.domain.enums.ResultEnum;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -51,12 +52,12 @@ public class RedisController {
              return ResultUtil.success(redisUtil.get(key));
         }catch (Exception e){
             log.error("查询失败", e);
-            return ResultUtil.error(-1,"查询失败");
+            return ResultUtil.error(ResultEnum.UNKNOWN_ERROR.getCode(),e.getMessage());
         }
     }
 
     @PostMapping ("/save")
-    @ApiOperation("redisSet测试")
+    @ApiOperation("re   disSet测试")
     public Result save(String key , String Value){
         try {
             redisTemplate.opsForValue().set(key ,Value);
