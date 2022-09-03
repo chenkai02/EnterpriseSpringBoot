@@ -11,6 +11,7 @@
         <module>app-mapper</module>
         <module>app-service</module>
         <module>app-web</module>
+        <module>app-webTow</module>
     </modules>
     <groupId>cpm.gitee.app</groupId>
     <artifactId>app-spboot</artifactId>
@@ -98,6 +99,14 @@
                 <artifactId>app-web</artifactId>
                 <version>${app.spboot.version}</version>
             </dependency>
+            <dependency>
+                <groupId>e-iceblue</groupId>
+                <artifactId>free.spire.doc</artifactId>
+                <version>3.9.0</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
+
+
+
 </project>

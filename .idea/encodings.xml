@@ -6,10 +6,9 @@
     <file url="file://$PROJECT_DIR$/app-mapper/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app-mapper/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app-pojo/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app-pojo/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app-service/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/app-service/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app-web/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app-web/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app-webTow/src/main/java" charset="UTF-8" />
   </component>
 </project>

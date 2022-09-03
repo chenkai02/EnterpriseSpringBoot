@@ -30,8 +30,9 @@ public class NewFeatureController {
     @GetMapping("/filter")
     @ApiOperation("filter测试")
     public List<String> newFeature(String number){
+        //去除输入的变量返回list
         List<String> result = strArr.stream().filter(str -> !number.equals(str)&&
-                !str.equals("")).collect(Collectors.toList());//去除输入的变量返回list
+                !str.equals("")).collect(Collectors.toList());
         return  result;
     }
     /**
@@ -44,8 +45,9 @@ public class NewFeatureController {
     @GetMapping("/map")
     @ApiOperation("map测试")
     public List<String> newFeature(){
+        //只返回对象的名字属性
         List<TesUser> users = testService.getAll();
-        List<String> names = users.stream().map(e -> e.getName()).collect(Collectors.toList());//只返回对象的名字属性
+        List<String> names = users.stream().map(e -> e.getName()).collect(Collectors.toList());
         return names;
     }
 }

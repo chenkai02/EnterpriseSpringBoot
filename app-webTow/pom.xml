@@ -9,8 +9,8 @@
     <groupId>cpm.gitee.app</groupId>
     <version>1.0.0</version>
   </parent>
-  <name>app-web</name>
-  <artifactId>app-web</artifactId>
+  <name>app-webTow</name>
+  <artifactId>app-webTow</artifactId>
   <version>1.0.0</version>
 
   <dependencies>
@@ -54,6 +54,7 @@
       <groupId>cpm.gitee.app</groupId>
       <artifactId>app-common</artifactId>
     </dependency>
+
     <!--rabbitmq-->
     <dependency>
       <groupId>org.springframework.boot</groupId>

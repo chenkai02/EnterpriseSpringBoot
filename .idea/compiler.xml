@@ -10,8 +10,9 @@
         <module name="app-common" />
         <module name="app-pojo" />
         <module name="app-mapper" />
-        <module name="app-web" />
+        <module name="app-webTow" />
         <module name="app-service" />
+        <module name="app-web" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -20,6 +21,7 @@
       <module name="app-pojo" target="1.8" />
       <module name="app-service" target="1.8" />
       <module name="app-web" target="1.8" />
+      <module name="app-webTow" target="1.8" />
       <module name="EnterpriseSpringBoot" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -31,6 +33,7 @@
       <module name="app-pojo" options="-parameters" />
       <module name="app-service" options="-parameters" />
       <module name="app-web" options="-parameters" />
+      <module name="app-webTow" options="-parameters" />
     </option>
   </component>
 </project>

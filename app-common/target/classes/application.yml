@@ -1,7 +1,7 @@
 server:
   port: 6050
 spring:
-# 配置MySQL 数据源
+  # 配置MySQL 数据源
   datasource:
     # druid 相关配置
     type: com.alibaba.druid.pool.DruidDataSource
@@ -23,7 +23,7 @@ spring:
       test-while-idle: true
       # 申请连接时执行validationQuery 检测链接是否有效，做了这个配置会降低性能
       test-on-borrow: true
-        # 归还连接时执行validationQuery检测连接是否有效，做了这个配置会降低性能
+      # 归还连接时执行validationQuery检测连接是否有效，做了这个配置会降低性能
       test-on-return: true
       # 打开PSCache, 并且指定每个链接上PSCache的大小
       pool-prepared-statements: true
@@ -62,3 +62,10 @@ spring:
 mybatis:
   mapper-locations: classpath:/mapper/**/*.xml
 
+
+
+  #配置rabbitMq 服务器
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: root

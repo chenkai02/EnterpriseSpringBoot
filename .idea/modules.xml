@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/app-pojo/app-pojo.iml" filepath="$PROJECT_DIR$/app-pojo/app-pojo.iml" />
       <module fileurl="file://$PROJECT_DIR$/app-service/app-service.iml" filepath="$PROJECT_DIR$/app-service/app-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/app-web/app-web.iml" filepath="$PROJECT_DIR$/app-web/app-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app-webTow/app-webTow.iml" filepath="$PROJECT_DIR$/app-webTow/app-webTow.iml" />
     </modules>
   </component>
 </project>
